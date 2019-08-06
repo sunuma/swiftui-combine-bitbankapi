@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6ACE44C622F961530040D30C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE44C522F961530040D30C /* AppDelegate.swift */; };
+		6ACE44C822F961530040D30C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE44C722F961530040D30C /* SceneDelegate.swift */; };
+		6ACE44CA22F961530040D30C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE44C922F961530040D30C /* ContentView.swift */; };
+		6ACE44CC22F961560040D30C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACE44CB22F961560040D30C /* Assets.xcassets */; };
+		6ACE44CF22F961560040D30C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACE44CE22F961560040D30C /* Preview Assets.xcassets */; };
+		6ACE44D222F961560040D30C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACE44D022F961560040D30C /* LaunchScreen.storyboard */; };
+		6ACE44DD22F961560040D30C /* Swiftui_BitcoinSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE44DC22F961560040D30C /* Swiftui_BitcoinSampleAppTests.swift */; };
+		6ACE44E822F961560040D30C /* Swiftui_BitcoinSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE44E722F961560040D30C /* Swiftui_BitcoinSampleAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ACE44D922F961560040D30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ACE44BA22F961530040D30C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ACE44C122F961530040D30C;
+			remoteInfo = "Swiftui+BitcoinSampleApp";
+		};
+		6ACE44E422F961560040D30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ACE44BA22F961530040D30C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ACE44C122F961530040D30C;
+			remoteInfo = "Swiftui+BitcoinSampleApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6ACE44C222F961530040D30C /* Swiftui+BitcoinSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftui+BitcoinSampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACE44C522F961530040D30C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6ACE44C722F961530040D30C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6ACE44C922F961530040D30C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6ACE44CB22F961560040D30C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6ACE44CE22F961560040D30C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6ACE44D122F961560040D30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6ACE44D322F961560040D30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ACE44D822F961560040D30C /* Swiftui+BitcoinSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swiftui+BitcoinSampleAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACE44DC22F961560040D30C /* Swiftui_BitcoinSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftui_BitcoinSampleAppTests.swift; sourceTree = "<group>"; };
+		6ACE44DE22F961560040D30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ACE44E322F961560040D30C /* Swiftui+BitcoinSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swiftui+BitcoinSampleAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACE44E722F961560040D30C /* Swiftui_BitcoinSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftui_BitcoinSampleAppUITests.swift; sourceTree = "<group>"; };
+		6ACE44E922F961560040D30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ACE44BF22F961530040D30C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACE44D522F961560040D30C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACE44E022F961560040D30C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ACE44B922F961530040D30C = {
+			isa = PBXGroup;
+			children = (
+				6ACE44C422F961530040D30C /* Swiftui+BitcoinSampleApp */,
+				6ACE44DB22F961560040D30C /* Swiftui+BitcoinSampleAppTests */,
+				6ACE44E622F961560040D30C /* Swiftui+BitcoinSampleAppUITests */,
+				6ACE44C322F961530040D30C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6ACE44C322F961530040D30C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ACE44C222F961530040D30C /* Swiftui+BitcoinSampleApp.app */,
+				6ACE44D822F961560040D30C /* Swiftui+BitcoinSampleAppTests.xctest */,
+				6ACE44E322F961560040D30C /* Swiftui+BitcoinSampleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ACE44C422F961530040D30C /* Swiftui+BitcoinSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				6ACE44C522F961530040D30C /* AppDelegate.swift */,
+				6ACE44C722F961530040D30C /* SceneDelegate.swift */,
+				6ACE44C922F961530040D30C /* ContentView.swift */,
+				6ACE44CB22F961560040D30C /* Assets.xcassets */,
+				6ACE44D022F961560040D30C /* LaunchScreen.storyboard */,
+				6ACE44D322F961560040D30C /* Info.plist */,
+				6ACE44CD22F961560040D30C /* Preview Content */,
+			);
+			path = "Swiftui+BitcoinSampleApp";
+			sourceTree = "<group>";
+		};
+		6ACE44CD22F961560040D30C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6ACE44CE22F961560040D30C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6ACE44DB22F961560040D30C /* Swiftui+BitcoinSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6ACE44DC22F961560040D30C /* Swiftui_BitcoinSampleAppTests.swift */,
+				6ACE44DE22F961560040D30C /* Info.plist */,
+			);
+			path = "Swiftui+BitcoinSampleAppTests";
+			sourceTree = "<group>";
+		};
+		6ACE44E622F961560040D30C /* Swiftui+BitcoinSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6ACE44E722F961560040D30C /* Swiftui_BitcoinSampleAppUITests.swift */,
+				6ACE44E922F961560040D30C /* Info.plist */,
+			);
+			path = "Swiftui+BitcoinSampleAppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ACE44C122F961530040D30C /* Swiftui+BitcoinSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACE44EC22F961560040D30C /* Build configuration list for PBXNativeTarget "Swiftui+BitcoinSampleApp" */;
+			buildPhases = (
+				6ACE44BE22F961530040D30C /* Sources */,
+				6ACE44BF22F961530040D30C /* Frameworks */,
+				6ACE44C022F961530040D30C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swiftui+BitcoinSampleApp";
+			productName = "Swiftui+BitcoinSampleApp";
+			productReference = 6ACE44C222F961530040D30C /* Swiftui+BitcoinSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6ACE44D722F961560040D30C /* Swiftui+BitcoinSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACE44EF22F961560040D30C /* Build configuration list for PBXNativeTarget "Swiftui+BitcoinSampleAppTests" */;
+			buildPhases = (
+				6ACE44D422F961560040D30C /* Sources */,
+				6ACE44D522F961560040D30C /* Frameworks */,
+				6ACE44D622F961560040D30C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ACE44DA22F961560040D30C /* PBXTargetDependency */,
+			);
+			name = "Swiftui+BitcoinSampleAppTests";
+			productName = "Swiftui+BitcoinSampleAppTests";
+			productReference = 6ACE44D822F961560040D30C /* Swiftui+BitcoinSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6ACE44E222F961560040D30C /* Swiftui+BitcoinSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACE44F222F961560040D30C /* Build configuration list for PBXNativeTarget "Swiftui+BitcoinSampleAppUITests" */;
+			buildPhases = (
+				6ACE44DF22F961560040D30C /* Sources */,
+				6ACE44E022F961560040D30C /* Frameworks */,
+				6ACE44E122F961560040D30C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ACE44E522F961560040D30C /* PBXTargetDependency */,
+			);
+			name = "Swiftui+BitcoinSampleAppUITests";
+			productName = "Swiftui+BitcoinSampleAppUITests";
+			productReference = 6ACE44E322F961560040D30C /* Swiftui+BitcoinSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ACE44BA22F961530040D30C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = ShinUnuma;
+				TargetAttributes = {
+					6ACE44C122F961530040D30C = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6ACE44D722F961560040D30C = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6ACE44C122F961530040D30C;
+					};
+					6ACE44E222F961560040D30C = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6ACE44C122F961530040D30C;
+					};
+				};
+			};
+			buildConfigurationList = 6ACE44BD22F961530040D30C /* Build configuration list for PBXProject "Swiftui+BitcoinSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ACE44B922F961530040D30C;
+			productRefGroup = 6ACE44C322F961530040D30C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ACE44C122F961530040D30C /* Swiftui+BitcoinSampleApp */,
+				6ACE44D722F961560040D30C /* Swiftui+BitcoinSampleAppTests */,
+				6ACE44E222F961560040D30C /* Swiftui+BitcoinSampleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ACE44C022F961530040D30C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACE44D222F961560040D30C /* LaunchScreen.storyboard in Resources */,
+				6ACE44CF22F961560040D30C /* Preview Assets.xcassets in Resources */,
+				6ACE44CC22F961560040D30C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACE44D622F961560040D30C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACE44E122F961560040D30C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ACE44BE22F961530040D30C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACE44C622F961530040D30C /* AppDelegate.swift in Sources */,
+				6ACE44C822F961530040D30C /* SceneDelegate.swift in Sources */,
+				6ACE44CA22F961530040D30C /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACE44D422F961560040D30C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACE44DD22F961560040D30C /* Swiftui_BitcoinSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACE44DF22F961560040D30C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACE44E822F961560040D30C /* Swiftui_BitcoinSampleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ACE44DA22F961560040D30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ACE44C122F961530040D30C /* Swiftui+BitcoinSampleApp */;
+			targetProxy = 6ACE44D922F961560040D30C /* PBXContainerItemProxy */;
+		};
+		6ACE44E522F961560040D30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ACE44C122F961530040D30C /* Swiftui+BitcoinSampleApp */;
+			targetProxy = 6ACE44E422F961560040D30C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6ACE44D022F961560040D30C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ACE44D122F961560040D30C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6ACE44EA22F961560040D30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6ACE44EB22F961560040D30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ACE44ED22F961560040D30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Swiftui+BitcoinSampleApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = E3RH48CSLN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Swiftui+BitcoinSampleApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.use.shinproduct.Swiftui-BitcoinSampleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ACE44EE22F961560040D30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Swiftui+BitcoinSampleApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = E3RH48CSLN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Swiftui+BitcoinSampleApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.use.shinproduct.Swiftui-BitcoinSampleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6ACE44F022F961560040D30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3RH48CSLN;
+				INFOPLIST_FILE = "Swiftui+BitcoinSampleAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.use.shinproduct.Swiftui-BitcoinSampleAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swiftui+BitcoinSampleApp.app/Swiftui+BitcoinSampleApp";
+			};
+			name = Debug;
+		};
+		6ACE44F122F961560040D30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3RH48CSLN;
+				INFOPLIST_FILE = "Swiftui+BitcoinSampleAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.use.shinproduct.Swiftui-BitcoinSampleAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swiftui+BitcoinSampleApp.app/Swiftui+BitcoinSampleApp";
+			};
+			name = Release;
+		};
+		6ACE44F322F961560040D30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3RH48CSLN;
+				INFOPLIST_FILE = "Swiftui+BitcoinSampleAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.use.shinproduct.Swiftui-BitcoinSampleAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swiftui+BitcoinSampleApp";
+			};
+			name = Debug;
+		};
+		6ACE44F422F961560040D30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3RH48CSLN;
+				INFOPLIST_FILE = "Swiftui+BitcoinSampleAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.use.shinproduct.Swiftui-BitcoinSampleAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swiftui+BitcoinSampleApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ACE44BD22F961530040D30C /* Build configuration list for PBXProject "Swiftui+BitcoinSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACE44EA22F961560040D30C /* Debug */,
+				6ACE44EB22F961560040D30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACE44EC22F961560040D30C /* Build configuration list for PBXNativeTarget "Swiftui+BitcoinSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACE44ED22F961560040D30C /* Debug */,
+				6ACE44EE22F961560040D30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACE44EF22F961560040D30C /* Build configuration list for PBXNativeTarget "Swiftui+BitcoinSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACE44F022F961560040D30C /* Debug */,
+				6ACE44F122F961560040D30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACE44F222F961560040D30C /* Build configuration list for PBXNativeTarget "Swiftui+BitcoinSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACE44F322F961560040D30C /* Debug */,
+				6ACE44F422F961560040D30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6ACE44BA22F961530040D30C /* Project object */;
+}
