@@ -1,0 +1,16 @@
+# Mockfile is a SwiftyMocky YAML configuration file
+sourceryCommand: null
+unit.tests.mock:
+  sources:
+    include:
+      - ./Swiftui+BitcoinSampleApp/Model/API
+      - ./Swiftui+BitcoinSampleApp/Interactor
+    exclude: []
+  output:
+    ./Swiftui+BitcoinSampleAppTests/Mocks/Mock.generated.swift
+  targets:
+    - Swiftui+BitcoinSampleAppTests
+  testable:
+    - Swiftui_BitcoinSampleApp
+  import:
+    - RxSwift

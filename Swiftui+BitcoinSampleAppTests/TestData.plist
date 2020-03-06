@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TickerEntity</key>
+	<dict>
+		<key>sell</key>
+		<string>1197690</string>
+		<key>buy</key>
+		<string>1197689</string>
+		<key>high</key>
+		<string>1207360</string>
+		<key>low</key>
+		<string>1182642</string>
+		<key>last</key>
+		<string>1197689</string>
+		<key>vol</key>
+		<string>830.5370</string>
+		<key>timestamp</key>
+		<real>1565680643816</real>
+	</dict>
+</dict>
+</plist>

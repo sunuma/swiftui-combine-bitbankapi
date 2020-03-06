@@ -1,0 +1,15 @@
+# Lint対象外のパス
+excluded:
+- Carthage
+- Pods
+- Pods
+- Swiftui+BitcoinSampleAppTests/Mocks
+
+# 1行の文字列制限
+line_length:
+- 200   # warning
+- 300   # error
+
+# 変数名２文字以上（デフォルト3）
+identifier_name:
+  min_length: 2

@@ -8,10 +8,20 @@
 
 import UIKit
 
+func appPrint(_ items: Any...) {
+    #if DEBUG
+    Swift.print(items)
+    #endif
+}
+
+func appDump<T>(_ value: T) {
+    #if DEBUG
+    Swift.dump(value)
+    #endif
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,6 +42,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
-
