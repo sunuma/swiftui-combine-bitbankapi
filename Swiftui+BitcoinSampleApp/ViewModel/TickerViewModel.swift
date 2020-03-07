@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 import Combine
 
 class TickerListViewModel: ObservableObject {
@@ -14,7 +15,7 @@ class TickerListViewModel: ObservableObject {
     @Published var apiError: ApiError?
     @Published var isShowAlert = false
     private var pairList = CurrencyPair.all()
-    let api: TickerApiProtocol
+    private let api: TickerApiProtocol
     private var disposables = Set<AnyCancellable>()
 
     private(set) lazy var onAppear: () -> Void = { [weak self] in
@@ -53,6 +54,13 @@ class TickerListViewModel: ObservableObject {
                     self?.models.append(Ticker(value, pair: pair))
             })
             .store(in: &disposables)
+    }
+}
+
+extension TickerListViewModel {
+    func detailView(ticker: Ticker) -> some View {
+        let viewModel = DepthViewModel(pair: ticker.pair)
+        return DetailView(viewModel: viewModel)
     }
 }
 

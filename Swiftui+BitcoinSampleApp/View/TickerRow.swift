@@ -17,15 +17,14 @@ struct TickerRow: View {
 
     var body: some View {
         VStack {
-            ZStack {
-                HStack {
-                    Image(self.ticker.pair.displayImage())
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                    Text(self.ticker.pair.displayName())
-                        .foregroundColor(.gray)
-                }.frame(maxWidth: .infinity, alignment: .leading)
-            }
+            HStack {
+                Image(self.ticker.pair.displayImage())
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                Text(self.ticker.pair.displayName())
+                    .foregroundColor(.gray)
+            }.frame(maxWidth: .infinity, alignment: .leading)
+
             HStack {
                 VStack {
                     HStack {

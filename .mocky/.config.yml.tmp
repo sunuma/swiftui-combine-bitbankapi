@@ -1,0 +1,14 @@
+sources:
+  include:
+  - ../Swiftui+BitcoinSampleApp/Model/API
+  - ../Swiftui+BitcoinSampleApp/Interactor
+  exclude: []
+templates:
+- /Users/shinunuma/workspace/Swift/SwiftUIExample/Swiftui+BitcoinSampleApp/.mocky/.template.swifttemplate
+output: ../Swiftui+BitcoinSampleAppTests/Mocks/Mock.generated.swift
+args:
+  swiftyMocky:
+    import:
+    - RxSwift
+    testable:
+    - Swiftui_BitcoinSampleApp

@@ -7,11 +7,9 @@
 //
 
 import SwiftUI
-import RxSwift
 
 struct ContentView: View {
     @ObservedObject var viewModel: TickerListViewModel
-    let disposeBag = DisposeBag()
 
     init(_ viewModel: TickerListViewModel = TickerListViewModel()) {
         self.viewModel = viewModel
@@ -42,7 +40,11 @@ struct ContentView: View {
 private extension ContentView {
     var forecastSection: some View {
         Section {
-            ForEach(viewModel.models, content: TickerRow.init(ticker:))
+            ForEach(viewModel.models) { ticker in
+                NavigationLink(destination: self.viewModel.detailView(ticker: ticker)) {
+                    TickerRow(ticker: ticker)
+                }
+            }
         }
     }
 

@@ -7,19 +7,58 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
 
-protocol DepthViewModelInterface {
-    var asks: [[Amount]] { get }
-    var bids: [[Amount]] { get }
+class DepthViewModel: ObservableObject {
+    @Published var depths: [Depth]
+    @Published var apiError: ApiError?
+    @Published var isShowAlert = false
+    let pair: CurrencyPair
+    private let api: DepthApiProtocol
+    private var disposables = Set<AnyCancellable>()
+
+    private(set) lazy var onAppear: () -> Void = { [weak self] in
+        self?.reload()
+    }
+
+    init(api: DepthApiProtocol = DepthApi(), pair: CurrencyPair) {
+        self.api = api
+        self.pair = pair
+        self.depths = []
+    }
+
+    func reload() {
+        api.excute(currencyPair: pair)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case let .failure(error):
+                    self?.apiError = error
+                    self?.isShowAlert = true
+                case .finished:
+                    appPrint("Depth api reqeust finished")
+                    self?.isShowAlert = false
+                }
+                }, receiveValue: { [weak self] value in
+                    let data = value.data
+                    var depths: [Depth] = []
+                    for (index, value) in data.asks.enumerated() {
+                        let bid: [String] = data.bids.indices.contains(index) ? data.bids[index] : []
+                        depths.append(Depth(ask: value, bid: bid))
+                    }
+                    self?.depths = depths
+            })
+            .store(in: &disposables)
+    }
 }
 
-struct DepthViewModel: DepthViewModelInterface {
-    private(set) var asks: [[Amount]]
-    private(set) var bids: [[Amount]]
+class Depth: Identifiable {
+    private(set) var ask: [String]
+    private(set) var bid: [String]
 
-    init(_ entity: DepthEntity) {
-        let data = entity.data
-        self.asks = data.asks.map { $0.map { Amount($0) } }
-        self.bids = data.bids.map { $0.map { Amount($0) } }
+    init(ask: [String], bid: [String]) {
+        self.ask = ask
+        self.bid = bid
     }
 }

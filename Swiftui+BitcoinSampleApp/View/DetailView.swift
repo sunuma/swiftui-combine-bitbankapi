@@ -9,15 +9,35 @@
 import SwiftUI
 
 struct DetailView: View {
+    @ObservedObject var viewModel: DepthViewModel
+
+    init(viewModel: DepthViewModel) {
+        self.viewModel = viewModel
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        List {
+            section
+        }
+        .navigationBarTitle("\(viewModel.pair.displayName())")
+        .onAppear(perform: viewModel.onAppear)
     }
 }
 
-#if DEBUG
-struct DetailViewPreviews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
+private extension DetailView {
+    var section: some View {
+        Section(header: Text("ask(price / amount) bid(price / amount)")) {
+            ForEach(viewModel.depths) {
+                DepthRow(depth: $0)
+            }
+        }
     }
 }
-#endif
+
+//#if DEBUG
+//struct DetailViewPreviews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView()
+//    }
+//}
+//#endif
